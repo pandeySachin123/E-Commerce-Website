@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    padding: 8px 0 16px;
+    overflow-x: hidden;
+    background: url("../img/bg.png") no-repeat center center fixed;
+    background-color: #000;
+}
+
+body.locked {
+    overflow: hidden;
+}
+
+a img {
+    border: 0;
+}
+
+.pageFade {
+    opacity: 0.75;
+    background-color: #222;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.pageWrapper {
+    max-width: 906px;
+    margin: 0 auto;
+}
+
+header {
+    height: 186px;
+    position: relative;
+    z-index: 10;
+}
+
+header .logo {
+    position: absolute;
+    top: 0;
+    left: -54px;
+    z-index: 11;
+}
+
+header .logo a {
+    display: block;
+    width: 282px;
+    height: 184px;
+    background: url("../img/logo.png") no-repeat;
+}
+
+header .phoneNumber {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+header .phoneNumber h3.numberHeader,
+header .phoneNumber h4 {
+    font-weight: bold;
+    color: #fff;
+}
+
+header .phoneNumber h3.numberHeader {
+    font-size: 12px;
+}
+
+header .phoneNumber h1.number {
+    font-size: 55px;
+    color: #fff;
+}
+
+header .phoneNumber h1.number a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .phoneNumber h4 a {
+    color: #fc0;
+    text-decoration: underline;
+}
+
+header .greyStrip {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    z-index: 9;
+    height: 39px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #313;
+}
+
+header .greyStrip h2.motto {
+    margin: 11px 20px 0 0;
+    line-height: 17px;
+    text-align: right;
+}
+
+header .greyStrip h2.motto span {
+    color: #fc0;
+    text-decoration: underline;
+}
+
+.extendable {
+    padding-bottom: 16px;
+    background-color: transparent;
+}
+
+.mainContent {
+    margin: -18px 0 20px;
+    padding: 20px;
+    background-color: #313;
+}
+
+.genericContent {
+    margin: 16px 0;
+    z-index: 8;
+}
+
+.genericContent h1,
+.genericContent h2 {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.genericContent h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.genericContent h2 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.genericContent .listContainer {
+    margin-bottom: 16px;
+    overflow: auto;
+}
+
+.genericContent .listContainer ul {
+    list-style: none;
+}
+
+.genericContent .listContainer ul.genericList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genericContent .listContainer ul.genericList li {
+    flex-basis: 33.33%;
+    font-size: 12px;
+    color: #fff;
+}
+
+.mainContent h2.missionStatement {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainContent .mission {
+    margin: 11px 0 16px;
+    z-index: 8;
+}
+
+.mainContent .mission p {
+    color: #fc0;
+    font-size: 14px;
+}
+
+.mainContent .mission p > a {
+    display: block;
+    color: #fc0;
+    text-decoration: none;
+}
+
+.mainContent .mission p span {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.mainContent .brands {
+    overflow: auto;
+    margin-bottom: 20px;
+    border: 1px solid #5c5c5c;
+    background: #0a0a0a url("../img/brand_bg.png") repeat-x;
+    padding: 8px 10px 12px;
+}
+
+.mainContent .brands h1 {
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainContent .brands a {
+    color: #fc0;
+    text-decoration: underline;
+}
+
+.mainContent .brands .listContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.mainContent .brands .listContainer ul {
+    flex-basis: 15%;
+    list-style: none;
+}
+
+.mainContent .locationsArea {
+    border: 1px solid #5c5c5c;
+    display: flex;
+}
+
+.mainContent .locationsArea .rightLocations {
+    width: 668px;
+    background: #121212 url("../img/states.png") no-repeat 98% 50%;
+    background-size: 108px 103px;
+    padding: 12px 22px 0;
+}
+
+.mainContent .locationsArea .rightLocations h2.locationHeader {
+    margin-bottom: 6px;
+}
+
+.mainContent .locationsArea .rightLocations .listContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainContent .locationsArea .rightLocations .listContainer ul {
+    flex-basis: 128px;
+    list-style: none;
+}
+
+.mainContent .locationsArea .leftImage {
+    width: 174px;
+    background: url("../img/brothers.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.mainContent .scheduleAppointment {
+    clear: both;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.mainContent .scheduleAppointment a#schedule {
+    border-radius: 8px;
+    background-color: #c40a0a;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    border-bottom: 4px solid #630505;
+}
+
+footer {
+    width: 100%;
+    max-width: 906px;
+    margin-top: 6px;
+}
+
+footer a {
+    color: #fc0;
+    text-decoration: none;
+}
+
+footer h3.address {
+    color: #fc0;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+footer h6 {
+    font-size: 12px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modal,
+.statusModal,
+.loader {
+    position: fixed;
+    top: -150%;
+    width: 310px;
+    z-index: 1001;
+    border: 5px solid #c40a0a;
+    border-radius: 12px;
+    background-color: #080808;
+}
+
+a#okayButton {
+    border-radius: 8px;
+    background-color: #c40a0a;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    border-bottom: 4px solid #630505;
+}
+
+#headerStatus {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+p#status {
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.modalContent textarea,
+.modalContent input.text {
+    width: 100%;
+    border: 1px solid #717171;
+    background-color: #313;
+    font-size: 12px;
+    margin: 0 0 6px;
+    padding: 4px;
+    color: #fff;
+}
+
+.modalContent p.formLabel {
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.error {
+    color: #ffd800;
+}
+
+.modalContent .submitAppointment {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.modalContent .submitAppointment a {
+    border-radius: 8px;
+    background-color: #c40a0a;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    border-bottom: 4px solid #630505;
+}
+
+.modalContent,
+.loaderContent,
+.statusContent {
+    padding: 10px;
+}
+
+.modalContent h2,
+.loaderContent h2,
+.statusContent h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.loaderContent,
+.statusContent {
+    background-color: #000;
+    text-align: center;
+}
+
+a.closeModal {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 16px;
+    background-color: #c40a0a;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+a.closeModal:before,
+a.closeModal:after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 24px;
+    background-color: #fff;
+    position: absolute;
+    transform-origin: 2px 12px;
+    left: 14px;
+    top: 4px;
+}
+
+a.closeModal:before {
+    transform: rotate(45deg);
+}
+
+a.closeModal:after {
+    transform: rotate(-45deg);
+}
+
+.loader,
+.statusModal {
+    top: 296px;
+    z-index: 1002;
+    position: absolute;
+    display: none;
+}
+
+.greyStrip h2,
+.rightLocations h2 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        background-image: url("../img/bg@2x.jpg");
+    }
+
+    header .logo a {
+        background-image: url("../img/logo@2x.png");
+        background-size: 282px 184px;
+    }
+
+    .mainContent .locationsArea .leftImage {
+        background-image: url("../img/brothers@2x.jpg");
+    }
+
+    .mainContent .locationsArea .rightLocations {
+        background-image: url("../img/states@2x.png");
+    }
+}
+
+@media screen and (max-width: 1008px) {
+    header .logo {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .mainContent .locationsArea .rightLocations {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    header .logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    header .phoneNumber {
+        position: static;
+        order: 2;
+    }
+
+    header .phoneNumber h3.numberHeader {
+        margin-bottom: 2px;
+    }
+
+    header .phoneNumber h1.number {
+        font-size: 40px;
+    }
+
+    header .greyStrip {
+        position: static;
+        height: auto;
+        order: 1;
+        background-color: transparent;
+        margin-bottom: 10px;
+    }
+
+    header .greyStrip h2.motto {
+        text-align: center;
+        line-height: normal;
+    }
+
+    .mainContent {
+        padding: 20px 16px;
+    }
+
+    .genericContent .listContainer ul.genericList li {
+        flex-basis: 50%;
+    }
+
+    .mainContent h2.missionStatement {
+        font-size: 22px;
+    }
+
+    .mainContent .mission p {
+        text-align: center;
+    }
+
+    .mainContent .brands {
+        display: block;
+        padding: 8px;
+    }
+
+    .mainContent .brands .listContainer ul {
+        flex-basis: 33.33%;
+    }
+
+    .mainContent .locationsArea {
+        height: auto;
+    }
+
+    .rightLocations .listContainer ul {
+        flex-basis: 25%;
+    }
+
+    footer {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .mainContent {
+        margin: 0;
+    }
+
+    .mainContent h2.missionStatement {
+        font-size: 20px;
+    }
+
+    .mainContent .locationsArea .rightLocations {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 8px;
+    }
+
+    .mainContent .locationsArea .leftImage {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .modal,
+    .statusModal,
+    .loader {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0 !important;
+        overflow-y: scroll;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .statusModal {
+        top: 0 !important;
+        display: none;
+    }
+
+    .modal.statusModal,
+    .statusModal.statusModal,
+    .loader.statusModal,
+    .modal.loader,
+    .statusModal.loader,
+    .loader.loader {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal.statusModal.show,
+    .statusModal.statusModal.show,
+    .loader.statusModal.show,
+    .modal.loader.show,
+    .statusModal.loader.show,
+    .loader.loader.show {
+        display: flex;
+    }
+
+    .mainContent .brands .listContainer ul {
+        flex-basis: 50%;
+    }
+
+    .genericContent .listContainer ul.genericList li {
+        flex-basis: 100%;
+    }
+
+    .rightLocations .listContainer ul {
+        flex-basis: 50%;
+    }
+}
+
+.redButton {
+    border-radius: 8px;
+    background-color: #c40a0a;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    border-bottom: 4px solid #630505;
+    border-top: 10px;
+}

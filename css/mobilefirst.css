@@ -1,0 +1,553 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    padding: 8px 0 16px;
+    overflow-x: hidden;
+    background: url("../img/bg.png") no-repeat center center fixed;
+    background-color: #000;
+}
+
+body.locked {
+    overflow: hidden;
+}
+
+a img {
+    border: 0;
+}
+
+/* Page overlay */
+.pageFade {
+    opacity: 0.75;
+    background-color: #222;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/* Page wrapper */
+.pageWrapper {
+    max-width: 906px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    height: auto;
+    position: relative;
+    z-index: 10;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    display: block;
+    margin: 0 auto;
+}
+
+header .logo a {
+    display: block;
+    width: 100%;
+    max-width: 282px;
+    height: auto;
+    background: url("../img/logo.png") no-repeat center;
+    background-size: contain;
+}
+
+header .phoneNumber {
+    margin-top: 10px;
+}
+
+header .phoneNumber h3.numberHeader,
+header .phoneNumber h4 {
+    font-weight: bold;
+    color: #fff;
+}
+
+header .phoneNumber h3.numberHeader {
+    font-size: 12px;
+}
+
+header .phoneNumber h1.number {
+    font-size: 40px; /* Adjusted for mobile */
+    color: #fff;
+}
+
+header .phoneNumber h1.number a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .phoneNumber h4 a {
+    color: #fc0;
+    text-decoration: underline;
+}
+
+header .greyStrip {
+    height: auto;
+    width: 100%;
+    background-color: #313;
+    padding: 10px 0;
+}
+
+header .greyStrip h2.motto {
+    margin: 0 20px;
+    line-height: 17px;
+    text-align: center;
+}
+
+header .greyStrip h2.motto span {
+    color: #fc0;
+    text-decoration: underline;
+}
+
+/* Main content styles */
+.mainContent {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #313;
+}
+
+.genericContent {
+    margin: 16px 0;
+    z-index: 8;
+}
+
+.genericContent h1,
+.genericContent h2 {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.genericContent h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.genericContent h2 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.genericContent .listContainer {
+    margin-bottom: 16px;
+    overflow: auto;
+}
+
+.genericContent .listContainer ul {
+    list-style: none;
+}
+
+.genericContent .listContainer ul.genericList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genericContent .listContainer ul.genericList li {
+    flex-basis: 100%; /* Full width on mobile */
+    font-size: 12px;
+    color: #fff;
+}
+
+/* Mission statement */
+.mainContent h2.missionStatement {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainContent .mission {
+    margin: 11px 0 16px;
+    z-index: 8;
+}
+
+.mainContent .mission p {
+    color: #fc0;
+    font-size: 14px;
+}
+
+.mainContent .mission p > a {
+    display: block;
+    color: #fc0;
+    text-decoration: none;
+}
+
+.mainContent .mission p span {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Brands section */
+.mainContent .brands {
+    overflow: auto;
+    margin-bottom: 20px;
+    border: 1px solid #5c5c5c;
+    background: #0a0a0a url("../img/brand_bg.png") repeat-x;
+    padding: 8px 10px 12px;
+}
+
+.mainContent .brands h1 {
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainContent .brands a {
+    color: #fc0;
+    text-decoration: underline;
+}
+
+.mainContent .brands .listContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.mainContent .brands .listContainer ul {
+    flex-basis: 100%; /* Full width on mobile */
+    list-style: none;
+}
+
+/* Locations area */
+.mainContent .locationsArea {
+    border: 1px solid #5c5c5c;
+    display: flex;
+    flex-direction: column; /* Stack on mobile */
+}
+
+.mainContent .locationsArea .rightLocations {
+    width: 100%; /* Full width on mobile */
+    background: #121212 url("../img/states.png") no-repeat 98% 50%;
+    background-size: 108px 103px;
+    padding: 12px 22px 0;
+}
+
+.mainContent .locationsArea .rightLocations h2.locationHeader {
+    margin-bottom: 6px;
+}
+
+.mainContent .locationsArea .rightLocations .listContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainContent .locationsArea .rightLocations .listContainer ul {
+    flex-basis: 100%; /* Full width on mobile */
+    list-style: none;
+}
+
+.mainContent .locationsArea .leftImage {
+    width: 100%; /* Full width on mobile */
+    background: url("../img/brothers.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* Schedule appointment */
+.mainContent .scheduleAppointment {
+    clear: both;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.mainContent .scheduleAppointment a#schedule {
+    border-radius: 8px;
+    background-color: #c40a0a;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    border-bottom: 4px solid #630505;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    max-width: 906px;
+    margin-top: 6px;
+}
+
+footer a {
+    color: #fc0;
+    text-decoration: none;
+}
+
+footer h3.address {
+    color: #fc0;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+footer h6 {
+    font-size: 12px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Modal styles */
+.modal,
+.statusModal,
+.loader {
+    position: fixed;
+    top: -150%;
+    width: 100%; /* Full width on mobile */
+    z-index: 1001;
+    border: 5px solid #c40a0a;
+    border-radius: 12px;
+    background-color: #080808;
+}
+
+a#okayButton {
+    border-radius: 8px;
+    background-color: #c40a0a;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    border-bottom: 4px solid #630505;
+}
+
+#headerStatus {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+p#status {
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+/* Modal content styles */
+.modalContent textarea,
+.modalContent input.text {
+    width: 100%;
+    border: 1px solid #717171;
+    background-color: #313;
+    font-size: 12px;
+    margin: 0 0 6px;
+    padding: 4px;
+    color: #fff;
+}
+
+.modalContent p.formLabel {
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.error {
+    color: #ffd800;
+}
+
+.modalContent .submitAppointment {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.modalContent .submitAppointment a {
+    border-radius: 8px;
+    background-color: #c40a0a;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    border-bottom: 4px solid #630505;
+}
+
+.modalContent,
+.loaderContent,
+.statusContent {
+    padding: 10px;
+}
+
+.modalContent h2,
+.loaderContent h2,
+.statusContent h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.loaderContent,
+.statusContent {
+    background-color: #000;
+    text-align: center;
+}
+
+/* Close modal button */
+a.closeModal {
+    width: 32px;
+    height: 32px;
+    display: block;
+    border-radius: 16px;
+    background-color: #c40a0a;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+a.closeModal:before,
+a.closeModal:after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 24px;
+    background-color: #fff;
+    position: absolute;
+    transform-origin: 2px 12px;
+    left: 14px;
+    top: 4px;
+}
+
+a.closeModal:before {
+    transform: rotate(45deg);
+}
+
+a.closeModal:after {
+    transform: rotate(-45deg);
+}
+
+/* Loader and status modal */
+.loader,
+.statusModal {
+    top: 296px;
+    z-index: 1002;
+    position: absolute;
+    display: none;
+}
+
+/* Typography for grey strip */
+.greyStrip h2,
+.rightLocations h2 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+}
+
+/* Media queries for larger screens */
+@media screen and (min-width: 500px) {
+    .modal,
+    .statusModal,
+    .loader {
+        top: 0; /* Adjust position for larger screens */
+    }
+}
+
+@media screen and (min-width: 736px) {
+    .mainContent .locationsArea .rightLocations {
+        float: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 8px;
+    }
+
+    .mainContent .locationsArea .leftImage {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 799px) {
+    header {
+        height: 186px;
+    }
+
+    header .phoneNumber h1.number {
+        font-size: 55px; /* Larger font size for larger screens */
+    }
+
+    .genericContent .listContainer ul.genericList li {
+        flex-basis: 33.33%; /* Three columns on larger screens */
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .mainContent .locationsArea .rightLocations {
+        background-image: none; /* Adjust background for larger screens */
+    }
+}
+
+@media screen and (min-width: 1008px) {
+    header .logo {
+        left: 0; /* Reset logo position */
+    }
+}
+
+/* Red button styles */
+.redButton {
+    border-radius: 8px;
+    background-color: #c40a0a;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    border-bottom: 4px solid #630505;
+}
+/* Additional styles for buttons */
+.button {
+    border-radius: 8px;
+    background-color: #c40a0a;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    border-bottom: 4px solid #630505;
+}
+
+.button:hover {
+    background-color: #a00;
+    border-bottom-color: #500;
+}

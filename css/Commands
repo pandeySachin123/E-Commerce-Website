@@ -1,0 +1,20 @@
+commands which i used for making it optimization
+
+npm install
+npm install -g uglify-js clean-css-cli html-minifier-terser
+
+for html 
+html-minifier-terser -c sample-config.json -o index.min.html index.html
+
+for js
+uglifyjs script.js -o script.min.js --compress --mangle
+
+for css
+cleancss -o styles.min.css styles.css
+
+
+for uncss
+npm install -g uncss
+uncss index.html > cleaned-styles.css
+
+uncss index.html about.html contact.html > cleaned-styles.css
